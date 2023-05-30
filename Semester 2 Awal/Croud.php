@@ -3,9 +3,9 @@
 $servername = "localhost";
 $username = "username";
 $password = "password";
-$dbname = "nama_database";
+$dbname = "Belajar_croud";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($Belajar_croud, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Koneksi gagal: " . $conn->connect_error);
 }
@@ -87,6 +87,5 @@ $result = $conn->query($sql);
 </html>
 
 <?php
-// Menutup koneksi ke basis data
 $conn->close();
 ?>
